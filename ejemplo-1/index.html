@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora JS</h1>
+
+    <div>
+        <div>
+            <label for="num1">Ingrese el primer número</label>
+            <input type="text" id="num1">
+        </div>
+        <div>
+            <label for="num2">Ingrese el segundo número</label>
+            <input type="text" id="num2">
+        </div>
+        <div>
+
+            <button onclick="verificarEdad()">Verificar edad</button>
+
+            <button onclick="sumar(num1.value,num2.value)">+</button>
+            <button onclick="restar(num1.value,num2.value)">-</button>
+            <button onclick="multiplicar(num1.value,num2.value)">x</button>
+            <button onclick="dividir(num1.value,num2.value)">/</button>
+        </div>
+        <div>
+            <label for="resultado">Resultado :</label>
+            <input type="text" id="resultado" value="" readonly>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
